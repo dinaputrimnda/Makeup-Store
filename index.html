@@ -3,16 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <title>Toko Make Up - Beranda</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+    }
+    header {
+      background-color: #d63384;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(rgba(214,51,132,0.7), rgba(214,51,132,0.7)), 
+                  url('https://img.freepik.com/free-photo/makeup-accessories-pink-background_23-2148169634.jpg') no-repeat center/cover;
+      color: white;
+    }
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+    }
+    footer {
+      background-color: #d63384;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Toko Make Up</h1>
+    <h1>💄 Toko Make Up</h1>
     <nav>
       <a href="index.html">Beranda</a>
       <a href="produk.html">Produk</a>
       <a href="kontak.html">Kontak</a>
-      <a href="">tentang</a>
+      <a href="tentang.html">Tentang</a>
     </nav>
   </header>
 
@@ -20,5 +71,9 @@
     <h2>Selamat Datang di Toko Make Up</h2>
     <p>Temukan koleksi make up terbaik untuk tampil percaya diri setiap hari.</p>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Toko Make Up. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
