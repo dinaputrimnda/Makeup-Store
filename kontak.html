@@ -4,14 +4,16 @@
   <meta charset="UTF-8">
   <title>Toko Make Up - Kontak</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#fff0f5; }
-    header, footer { background:#d63384; color:white; padding:15px; text-align:center; }
-    nav a { color:white; text-decoration:none; margin:0 10px; }
-    nav a:hover { text-decoration: underline; }
-    .container { max-width:600px; margin:40px auto; background:white; padding:20px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1); }
-    input, textarea { width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:6px; }
-    button { background:#d63384; color:white; border:none; padding:10px 20px; border-radius:6px; cursor:pointer; }
-    button:hover { background:#a61c64; }
+    body {margin:0;font-family:Segoe UI,Tahoma,sans-serif;background:#fff5f7;color:#333;}
+    header {background:#e2979c;color:white;padding:15px 30px;display:flex;justify-content:space-between;align-items:center;}
+    nav a {color:white;text-decoration:none;margin:0 14px;font-weight:bold;}
+    nav a:hover {color:#ffe6eb;}
+    .kontak {padding:40px;max-width:600px;margin:auto;}
+    label {display:block;margin-top:10px;}
+    input,textarea {width:100%;padding:10px;margin-top:5px;border:1px solid #ccc;border-radius:8px;}
+    button {background:#d64c66;color:white;border:none;padding:10px 20px;border-radius:8px;margin-top:15px;cursor:pointer;}
+    button:hover {background:#b93a52;}
+    footer {background:#e2979c;color:white;text-align:center;padding:12px;margin-top:40px;}
   </style>
 </head>
 <body>
@@ -25,15 +27,18 @@
     </nav>
   </header>
 
-  <div class="container">
+  <section class="kontak">
     <h2>Hubungi Kami</h2>
     <form>
-      <input type="text" placeholder="Nama Anda" required>
-      <input type="email" placeholder="Email Anda" required>
-      <textarea rows="5" placeholder="Pesan Anda" required></textarea>
+      <label>Nama:</label>
+      <input type="text" required>
+      <label>Email:</label>
+      <input type="email" required>
+      <label>Pesan:</label>
+      <textarea rows="5" required></textarea>
       <button type="submit">Kirim</button>
     </form>
-  </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Toko Make Up. All Rights Reserved.</p>
