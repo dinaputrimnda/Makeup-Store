@@ -4,18 +4,66 @@
   <meta charset="UTF-8">
   <title>Toko Make Up - Produk</title>
   <style>
-    body { font-family: Arial, sans-serif; margin:0; background:#fff0f5; }
-    header, footer { background:#d63384; color:white; padding:15px; text-align:center; }
-    nav a { color:white; text-decoration:none; margin:0 10px; }
-    nav a:hover { text-decoration: underline; }
-    .container { display: grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap:20px; padding:20px; }
-    .card {
-      background:white; padding:15px; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1);
-      text-align:center; transition:transform 0.2s;
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #fff5f7;
+      color: #333;
     }
-    .card:hover { transform: scale(1.05); }
-    .card img { width:100%; border-radius:10px; }
-    h2 { text-align:center; margin:20px 0; }
+    header {
+      background-color: #e2979c;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 14px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffe6eb;
+    }
+    .produk-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+    .produk {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .produk:hover {
+      transform: translateY(-5px);
+    }
+    .produk img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .produk h3 {
+      margin: 10px 0 5px;
+      color: #d64c66;
+    }
+    .produk p {
+      font-size: 14px;
+    }
+    footer {
+      background-color: #e2979c;
+      color: white;
+      text-align: center;
+      padding: 12px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
@@ -29,24 +77,27 @@
     </nav>
   </header>
 
-  <h2>Daftar Produk</h2>
-  <div class="container">
-    <div class="card">
-      <img src="https://img.freepik.com/free-photo/makeup-foundation-powder-brush_23-2147956927.jpg" alt="Foundation">
-      <h3>Foundation</h3>
-      <p>Rp 120.000</p>
+  <section>
+    <h2 style="text-align:center; margin:30px;">Koleksi Produk</h2>
+    <div class="produk-container">
+      <!-- Ganti link gambar dengan link dari GitHub -->
+      <div class="produk">
+        <img src="https://raw.githubusercontent.com/username/repo/main/images/lipstick.jpg" alt="Lipstick">
+        <h3>Lipstick Matte</h3>
+        <p>Warna nude pink tahan lama.</p>
+      </div>
+      <div class="produk">
+        <img src="https://raw.githubusercontent.com/username/repo/main/images/foundation.jpg" alt="Foundation">
+        <h3>Foundation Glow</h3>
+        <p>Memberi hasil natural dan glowing.</p>
+      </div>
+      <div class="produk">
+        <img src="https://raw.githubusercontent.com/username/repo/main/images/eyeshadow.jpg" alt="Eyeshadow">
+        <h3>Eyeshadow Palette</h3>
+        <p>Kombinasi warna pink dan nude elegan.</p>
+      </div>
     </div>
-    <div class="card">
-      <img src="https://img.freepik.com/free-photo/lipsticks-assortment-still-life_23-2148412345.jpg" alt="Lipstick">
-      <h3>Lipstick</h3>
-      <p>Rp 80.000</p>
-    </div>
-    <div class="card">
-      <img src="https://img.freepik.com/free-photo/eyeshadow-palette-brush_23-2147835856.jpg" alt="Eyeshadow">
-      <h3>Eyeshadow Palette</h3>
-      <p>Rp 150.000</p>
-    </div>
-  </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Toko Make Up. All Rights Reserved.</p>
